@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Colour Guessing Game</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="title-div">
+        <div class="ghost-div"></div>
+        <h1 class="game-title">Guess the colour</h1>
+        <button id="reset-game">Reset Game</button>
+      </div>
+      
+
+      <h3 data-testid="gameStatus" id="game-status">Correct/Wrong</h3>
+      <h3 data-testid="score" id="game-score">Score: 0</h3>
+
+      <div class="target-colour-box" data-testid="colorBox"></div>
+
+      <div class="colour-options">
+        <button class="btn" data-testid="colorOption">Colour 1</button>
+        <button class="btn" data-testid="colorOption">Colour 2</button>
+        <button class="btn" data-testid="colorOption">Colour 3</button>
+        <button class="btn" data-testid="colorOption">Colour 4</button>
+        <button class="btn" data-testid="colorOption">Colour 5</button>
+        <button class="btn" data-testid="colorOption">Colour 6</button>
+      </div>
+
+      <details data-testid="gameInstructions">
+        <summary>Game Instructions</summary>
+        <p>
+          The main objective is to guess the target color displayed in the box
+          by selecting the correct color from the options provided.
+        </p>
+      </details>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- **Target Color Box**: A box to display the randomly selected target color.
+ **Color Options**: Six buttons, each with a unique background color.
+ **Game Instructions**: A message explaining how to play.
+ **Game Status**: A message to show if the guess is correct or wrong.
+ **Score Counter**: A display to show the player’s current score.
+ **New Game Button**: A button to reset the game. -->
+
+<!-- <b>Welcome to the Color Guessing Game! This is a fun and engaging game where you test your ability to match colors. Click the start button to begin! </b> -->
